@@ -148,7 +148,13 @@
             <body>
                 <div class="inputBox" id="inner" style="color: azure;"></div>
                 <script>
+                    function isOdd(number) {
+                        if(number %2 == 0) {
+                            inner.innerHTML = "FALSE"
+                        } else inner.innerHTML = "TRUE"
+                    }
 
+                    isOdd(2)
                 </script>
                 <!-- Crie uma função que recebe um valor inteiro e retorne verdadeiro se
                 for ímpar ou falso se for par. -->
