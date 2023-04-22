@@ -148,7 +148,14 @@
             <body>
                 <div class="inputBox" id="inner" style="color: azure;"></div>
                 <script>
+                    function calcularMedia(nota1, nota2, nota3, nome) {
+                        const media = (nota1 + nota2 + nota3) / 3;
 
+                        console.log(`Nota 1: ${nota1}, Nota 2: ${nota2}, Nota 3: ${nota3}`);
+                        alert(`${nome}, sua média é ${media}.`);
+                    }
+                    
+                    calcularMedia(60, 70, 80, 'João');
                 </script>
                 <!-- 9. Crie uma função chamada calcularMedia(nota1, nota2, nota3,
                 nome), que recebe 4 parâmetros sendo três inteiros e um texto
